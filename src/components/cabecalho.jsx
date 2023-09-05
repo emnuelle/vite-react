@@ -13,6 +13,10 @@ export default function Cabecalho() {
         <nav>
           <ul>
             <li><link to='/'>Home</link></li>
+            <li><link to='/'>Produtos</link></li>
+            <li><link to='/'>Home</link></li>
+
+            
           </ul>
         </nav>
 
