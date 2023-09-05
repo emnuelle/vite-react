@@ -2,6 +2,7 @@ import Cabecalho from "./components/cabecalho";
 import Conteudo from "./components/Conteudo";
 import Rodape from "./components/Rodape";
 import reactLogo from "./assets/react.svg";// Imagem se tranformou numa var
+import {Outlet} from 'react-router-dom'
 
 
 export default function App() {
@@ -19,7 +20,9 @@ export default function App() {
         
         {/* <img src={reactLogo} alt={reactLogoAlt} /> */}
 
-        <Conteudo reactLogoProps={reactLogo} reactLogoAltProps={reactLogoAlt}/>
+        {/* <Conteudo reactLogoProps={reactLogo} reactLogoAltProps={reactLogoAlt}/> */}
+
+
 
         <Rodape listaProps={listaLinks}/>
 

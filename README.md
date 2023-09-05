@@ -25,5 +25,6 @@ Currently, two official plugins are available:
 
 ## Trocar o componente <app/> pelo componente <RouterProvider/> no ReactDOM.render
 -
-
 ## Adicionado a Props router ao componente RouterProvider
+
+## Vaos adicionar o componente Outlet em App
