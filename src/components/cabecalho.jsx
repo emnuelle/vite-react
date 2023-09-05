@@ -1,5 +1,5 @@
 import { createElement } from "react";
-import { Link } From="React-router-dom";
+import { Link } from "React-router-dom";
 // Até então teria que aparecer a bomba do router dom 
 
 export default function Cabecalho() {
