@@ -1,3 +1,5 @@
+import { createElement } from "react";
+
 export default function Conteudo(props) {
   /*Área declarativa*/
     return (
