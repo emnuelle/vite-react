@@ -1,7 +1,6 @@
 import React, { Children } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
 
 // Blocos de rotas
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
