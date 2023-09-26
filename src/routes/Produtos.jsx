@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { ListaProdutosExterna } from "../components/ListaProdutosExterna";
 import { Link } from "react-router-dom";
 import styles from "./Produtos.module.css";
+import {AiFillEdit} from "react-icons/ai" // instalar
+
 
 export default function Produtos() {
 
@@ -26,7 +28,7 @@ export default function Produtos() {
                   <th>NOME</th>
                   <th>DESCRIÇÃO</th>
                   <th>PREÇO</th>
-                  <th>EDITAR</th>
+                  <th>EDITAR / EXCLUIR</th>
                 </tr>
               </thead>
               <tbody>
@@ -37,14 +39,14 @@ export default function Produtos() {
                       <td>{item.nome}</td>
                       <td>{item.desc}</td>
                       <td>{item.preco}</td>
-                      <td> <Link to={`/editar/produtos/${item.id}`}>Editar</Link> </td>
+                      <td> <Link to={`/editar/produtos/${item.id}`}>Editar</Link> | <Link to={`/excluir/produtos/${item.id}`}>Excluir</Link> </td>
                     </tr>
                   ))
                 }
               </tbody>
               <tfoot>
                 <tr>
-                  <td colSpan={5}>PRODUTOS INFORMÁTICOS - QTD = </td>
+                  <td colSpan={5}>PRODUTOS INFORMÁTICOS - QTD = {listaProdutosLocal.length}</td>
                 </tr>
               </tfoot>
             </table>
@@ -53,6 +55,8 @@ export default function Produtos() {
     </div>
   )
 }
+
+
 
 
 // <div>
