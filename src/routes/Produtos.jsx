@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { ListaProdutosExterna } from "../components/ListaProdutosExterna";
+import { Link } from "react-router-dom";
+import styles from "./Produtos.module.css";
 
 export default function Produtos() {
 
@@ -16,38 +18,38 @@ export default function Produtos() {
     <div>
       <h1>Lista de Produtos</h1>
 
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>NOME</th>
-                <th>DESCRÇÃO</th>
-                <th>PREÇO</th>
-                <th>EDITAR</th>
-              </tr>
-            </thead>
-            <tbody>
-            {
-              listaProdutosLocal.map((item,indice)=>(
-                <tr key={indice}>
-                  <td>{item.id}</td>
-                  <td>{item.nome}</td>
-                  <td>{item.descrição}</td>
-                  <td>{item.preco}</td>
-                  <td> <Link to={`/editar/produtos/${item.id}`}>Editar</Link> </td>
+          <div>
+            <table className={styles.tblEstilo}>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>NOME</th>
+                  <th>DESCRIÇÃO</th>
+                  <th>PREÇO</th>
+                  <th>EDITAR</th>
                 </tr>
-              ))
-            }
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colSpan={4}>Prdutos Informáticos - QTD =</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      
+              </thead>
+              <tbody>
+                {
+                  listaProdutosLocal.map((item,indice)=>(
+                    <tr key={indice}>
+                      <td>{item.id}</td>
+                      <td>{item.nome}</td>
+                      <td>{item.desc}</td>
+                      <td>{item.preco}</td>
+                      <td> <Link to={`/editar/produtos/${item.id}`}>Editar</Link> </td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colSpan={5}>PRODUTOS INFORMÁTICOS - QTD = </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
     </div>
   )
 }
