@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ListaProdutosExterna } from "../components/ListaProdutosExterna";
+
 import { Link } from "react-router-dom";
 import styles from "./Produtos.module.css";
 import { AiFillEdit as Editar } from "react-icons/ai";
