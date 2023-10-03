@@ -30,6 +30,7 @@
                     display: block;
                     font-weight: bold;
                     padding: 50px 10px;
+                    transition: background-color ease-out 300ms, color ease-out;
                     
                     & hover {
                         background-color: #fff;
