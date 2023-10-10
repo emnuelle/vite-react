@@ -8,7 +8,7 @@ export default function Cabecalho() {
     <>
         <header className={styles.cabecalho}>
           
-          <img src="/img/produtos.png" alt="Mãos segurando caixas." /> 
+          <img src="/public/img/product.png" alt="Mãos segurando caixas." /> 
 
           {/* Crie uma lista com 5 links para as nossas rotas:
           Obs: Utilize o componente Link do router-dom */}
